@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 function App() {
-  return (
-    <div className="App">
-      <StatefulGreetingWithPrevState />
-    </div>
-  );
-}
-
-export default App;
+    return (<div className="App">
+        <ConditionalRenderingClass />
+        <ConditionalRenderingFunctional connected={true}/>
+    </div>);
+  }
+  
+  export default App;
